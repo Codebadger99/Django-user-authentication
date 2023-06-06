@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Dashboard</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+    <style>
+      body {
+        background: #5a3f37; /* fallback for old browsers */
+        background: -webkit-linear-gradient(
+          to right,
+          #2c7744,
+          #5a3f37
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(
+          to right,
+          #2c7744,
+          #5a3f37
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+      }
+      a{
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello {{request.user}}</h1>
+    <p><a href="{% url 'Logout'%}">Logout</a></p>
+  </body>
+</html>
